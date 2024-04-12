@@ -1,0 +1,1 @@
+Este projeto é o primeiro de estudo de lógica de programação
