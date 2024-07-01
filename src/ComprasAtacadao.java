@@ -1,54 +1,60 @@
 public class ComprasAtacadao {
 
+ public int quantidadeProdutos;
+ private float precoUnitario;
+ private float valorTotal;
+ private int idProduto;
 
-    public float preco;
-    public int quantidade;
-    private float desconto;
-    public String produto;
 
-    public int getId() {
-        return id;
-    }
+ public void computarCompra(int quantidadeProdutos, float precoUnitario, int idProduto){
+  this.idProduto=idProduto;
+  this.precoUnitario = precoUnitario;
+  this.quantidadeProdutos =quantidadeProdutos;
+ }
 
-    public void setId(int id) {
-        this.id = id;
-    }
+ public double calcularValorTotal() {
+  return quantidadeProdutos * precoUnitario;
+ }
 
-    private int id;
+ public float getPrecoUnitario() {
+  return precoUnitario;
+ }
 
-    public float getPreco() {
-        return preco;
-    }
+ public void setPrecoUnitario(float precoUnitario) {
+  this.precoUnitario = precoUnitario;
+ }
 
-    public void setPreco(float preco) {
-        this.preco = preco;
-    }
+ public int getQuantidadeProdutos() {
+  return quantidadeProdutos;
+ }
 
-    public int getQuantidade() {
-        return quantidade;
-    }
+ public void setQuantidadeProdutos(int quantidadeProdutos) {
+  this.quantidadeProdutos = quantidadeProdutos;
+ }
 
-    public void setQuantidade(int quantidade) {
-        this.quantidade = quantidade;
-    }
+ public float getValorTotal() {
+  return valorTotal;
+ }
 
-    public float getDesconto() {
-        return desconto;
-    }
+ public void setValorTotal(float valorTotal) {
+  this.valorTotal = valorTotal;
+ }
 
-    public void setDesconto(float desconto) {
-        this.desconto = desconto;
+ public int getIdProduto() {
+  return idProduto;
+ }
 
-    }
-
-    public String getProduto() {
-        return produto;
-    }
-
-    public void setProduto(String produto) {
-        this.produto = produto;
-    }
-
-    public void computarCompra(){
-    }
+ public void setIdProduto(int idProduto) {
+  this.idProduto = idProduto;
+ }
+ float aplicarDescontoPorQuantidade() {
+  if (quantidadeProdutos > 5 && quantidadeProdutos <= 15) {
+   valorTotal *= 0.9;
+  } else if (quantidadeProdutos > 15 && quantidadeProdutos <= 25) {
+   valorTotal *= 0.8;
+  } else if (quantidadeProdutos > 25) {
+   valorTotal *= 0.75;
+  }
+  return valorTotal;
+ }
 }

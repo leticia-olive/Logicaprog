@@ -3,6 +3,15 @@
 public class Main {
     public static void main(String[] args) {
 
+    ComprasAtacadao caixa = new ComprasAtacadao();
+    caixa.setIdProduto(1);
+    caixa.setQuantidadeProdutos(1);
+    caixa.setPrecoUnitario(3.99F);
 
-    }
-}
+
+
+
+
+
+
+}}
