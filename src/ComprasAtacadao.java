@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class ComprasAtacadao {
 
     Scanner input = new Scanner(System.in);
-
+// como posso criar metodo para adicionar produtopedido no pedido
 
 
 }
