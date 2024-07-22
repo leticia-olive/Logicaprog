@@ -1,18 +1,18 @@
 public class ProdutoPedido {
-    private Pedido pedido;
+    private Produto produto;
     private int quantidade;
 
-    public ProdutoPedido(Pedido pedido, int quantidade) {
-        this.pedido = pedido;
+    public ProdutoPedido(Produto produto, int quantidade) {
+        this.produto = produto;
         this.quantidade = quantidade;
     }
 
-    public Pedido getPedido() {
-        return pedido;
+    public Produto getProduto() {
+        return produto;
     }
 
-    public void setPedido(Pedido pedido) {
-        this.pedido = pedido;
+    public void setProduto(Produto produto) {
+        this.produto = produto;
     }
 
     public int getQuantidade() {
@@ -23,4 +23,3 @@ public class ProdutoPedido {
         this.quantidade = quantidade;
     }
 }
-

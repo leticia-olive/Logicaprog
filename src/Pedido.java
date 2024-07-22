@@ -1,16 +1,26 @@
 import java.util.ArrayList;
 
 public class Pedido {
-    private ArrayList<Produto> produtos;
+    private ArrayList<ProdutoPedido> produtos ;
     private double valorTotal;
     private String metodoPagamento;
 
-    public Pedido(String metodoPagamento, Produto produtos) {
+    public Pedido(String metodoPagamento,ArrayList<ProdutoPedido> produtos) {
         this.metodoPagamento = metodoPagamento;
-        this.valorTotal = 0.0;
-        //this.produtos = produtos;  retornando erro não sei pq
-
+        this.produtos = new ArrayList<>();
     }
 
+   // criar o produtopedido e adicionar na lista
 
+    public void adicionarProduto(Produto produto, int quantidade){
+        produtos.add(new ProdutoPedido(produto,quantidade));
+    }
+
+    public ArrayList<ProdutoPedido> getProdutos() {
+        return produtos;
+    }
+    public void setProdutos(ArrayList<ProdutoPedido> produtos) {
+        this.produtos = produtos;
+    }
 }
+
