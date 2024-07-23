@@ -13,6 +13,9 @@ public class Main {
 
 
         ArrayList<ProdutoPedido> produtos = new ArrayList<>();
+        ProdutoPedido aux = new ProdutoPedido(produto1,2);
+        produtos.add(aux);
+
 
         Pedido pedido = new Pedido ("Dinheiro",produtos);
         System.out.println(pedido);

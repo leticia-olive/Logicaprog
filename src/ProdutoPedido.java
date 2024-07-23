@@ -22,4 +22,8 @@ public class ProdutoPedido {
     public void setQuantidade(int quantidade) {
         this.quantidade = quantidade;
     }
+    public double getValorTotal(){
+        return produto.getValor()*quantidade;
+
+    }
 }

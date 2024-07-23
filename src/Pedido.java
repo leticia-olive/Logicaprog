@@ -1,11 +1,15 @@
 import java.util.ArrayList;
 
 public class Pedido {
-    private ArrayList<ProdutoPedido> produtos ;
+    private ArrayList<ProdutoPedido> produtos;
     private double valorTotal;
     private String metodoPagamento;
 
-    public Pedido(String metodoPagamento,ArrayList<ProdutoPedido> produtos) {
+    public String getMetodoPagamento() {
+        return metodoPagamento;
+    }
+
+    public Pedido(String metodoPagamento, ArrayList<ProdutoPedido> produtos) {
         this.metodoPagamento = metodoPagamento;
         this.produtos = new ArrayList<>();
     }
