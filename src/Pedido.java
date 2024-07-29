@@ -14,7 +14,6 @@ public class Pedido {
         this.produtos = new ArrayList<>();
     }
 
-   // criar o produtopedido e adicionar na lista
 
     public void adicionarProduto(Produto produto, int quantidade){
         produtos.add(new ProdutoPedido(produto,quantidade));
